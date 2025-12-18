@@ -1,0 +1,474 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+
+# Set style
+sns.set_style("whitegrid")
+plt.rcParams['font.size'] = 11
+
+# Function to calculate binned error
+def calculate_binned_error(rating, actual_value):
+    """
+    Calculate error using binned approach where each rating represents a range:
+    Rating 1: [0.00, 0.20) - Very Low
+    Rating 2: [0.20, 0.40) - Low
+    Rating 3: [0.40, 0.60) - Moderate
+    Rating 4: [0.60, 0.80) - High
+    Rating 5: [0.80, 1.00] - Very High
+    
+    If actual value is within the bin, error = 0
+    If outside, error = distance to nearest boundary
+    """
+    # Define bin boundaries
+    bins = [(0.00, 0.20), (0.20, 0.40), (0.40, 0.60), (0.60, 0.80), (0.80, 1.00)]
+    
+    # Get the bin for this rating (rating is 1-5, bins are indexed 0-4)
+    lower, upper = bins[int(rating) - 1]
+    
+    # Check if actual value is within the bin
+    if lower <= actual_value <= upper:
+        return 0.0
+    elif actual_value < lower:
+        return lower - actual_value
+    else:  # actual_value > upper
+        return actual_value - upper
+
+# Load data
+df = pd.read_csv('responses_backup_20251130_2.csv')
+songs_df = pd.read_csv('../data/candDSS.csv')
+survey1_df = pd.read_csv('../data/dss_data22nov.csv')
+
+# Merge musical sophistication data
+ms_data = survey1_df[['email', 'MSAE', 'MSE']].copy()
+ms_data['email'] = ms_data['email'].str.lower().str.strip()
+df['email_clean'] = df['email'].str.lower().str.strip()
+df = df.merge(ms_data, left_on='email_clean', right_on='email', how='left', suffixes=('', '_ms'))
+
+n_participants = len(df)
+n_songs = 8
+
+print(f"Analyzing {n_participants} participants...")
+
+# ============================================================================
+# Collect ratings by bucket
+# ============================================================================
+bucket_ratings = {
+    'same_genre_similar': [],
+    'same_genre_dissimilar': [],
+    'diff_genre_similar': [],
+    'diff_genre_dissimilar': []
+}
+
+for _, row in df.iterrows():
+    for i in range(n_songs):
+        bucket = row[f'song_{i}_bucket']
+        rating = row[f'song_{i}_rating']
+        if pd.notna(bucket) and pd.notna(rating):
+            bucket_ratings[bucket].append(rating)
+
+# ============================================================================
+# RQ: Genre × Feature Interaction
+# ============================================================================
+fig, ax = plt.subplots(figsize=(12, 8))
+
+genre_types = ['Same Genre', 'Different Genre']
+similar_means = [np.mean(bucket_ratings['same_genre_similar']), np.mean(bucket_ratings['diff_genre_similar'])]
+dissimilar_means = [np.mean(bucket_ratings['same_genre_dissimilar']), np.mean(bucket_ratings['diff_genre_dissimilar'])]
+similar_stds = [np.std(bucket_ratings['same_genre_similar']), np.std(bucket_ratings['diff_genre_similar'])]
+dissimilar_stds = [np.std(bucket_ratings['same_genre_dissimilar']), np.std(bucket_ratings['diff_genre_dissimilar'])]
+
+x = np.arange(len(genre_types))
+width = 0.35
+
+bars1 = ax.bar(x - width/2, similar_means, width, yerr=similar_stds, 
+               label='Similar Features', color='#4a7c59', alpha=0.85, 
+               edgecolor='black', linewidth=1.5, capsize=8)
+bars2 = ax.bar(x + width/2, dissimilar_means, width, yerr=dissimilar_stds,
+               label='Different Features', color='#c17c74', alpha=0.85, 
+               edgecolor='black', linewidth=1.5, capsize=8)
+
+ax.set_ylabel('Average Rating (1-5)', fontsize=14, fontweight='bold')
+ax.set_xlabel('Genre Match', fontsize=14, fontweight='bold')
+ax.set_xticks(x)
+ax.set_xticklabels(genre_types)
+ax.set_ylim(0, 5.5)
+ax.axhline(y=3, color='gray', linestyle='--', alpha=0.5, label='Neutral (3.0)')
+ax.legend(fontsize=12, loc='upper right')
+ax.grid(axis='y', alpha=0.3)
+
+for bars in [bars1, bars2]:
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height + 0.15,
+                f'{height:.2f}', ha='center', va='bottom', fontweight='bold', fontsize=11)
+
+plt.tight_layout()
+plt.savefig('../figures/RQ_genre_feature_interaction.png', dpi=300, bbox_inches='tight')
+print('✓ RQ_genre_feature_interaction.png')
+
+# ============================================================================
+# SQ1: Can Features Compensate for Genre Mismatch?
+# ============================================================================
+fig, ax = plt.subplots(figsize=(10, 7))
+
+categories = ['Same Genre,\nSimilar Features', 'Different Genre,\nSimilar Features']
+means = [np.mean(bucket_ratings['same_genre_similar']), np.mean(bucket_ratings['diff_genre_similar'])]
+stds = [np.std(bucket_ratings['same_genre_similar']), np.std(bucket_ratings['diff_genre_similar'])]
+
+colors = ['#4a7c59', '#d4a574']
+bars = ax.bar(categories, means, yerr=stds, capsize=10, color=colors, 
+               alpha=0.85, edgecolor='black', linewidth=2)
+
+ax.set_ylabel('Average Rating (1-5)', fontsize=14, fontweight='bold')
+ax.set_xlabel('Recommendation Type', fontsize=14, fontweight='bold')
+ax.set_ylim(0, 5.5)
+ax.axhline(y=3, color='gray', linestyle='--', alpha=0.5, label='Neutral (3.0)')
+ax.legend(fontsize=11)
+ax.grid(axis='y', alpha=0.3)
+
+plt.tight_layout()
+plt.savefig('../figures/SQ1_feature_compensation.png', dpi=300, bbox_inches='tight')
+print('✓ SQ1_feature_compensation.png')
+
+# ============================================================================
+# SQ2a: Feature Awareness (ALL 4 features)
+# ============================================================================
+participant_avgs = {'selected_all': [], 'not_selected_all': []}
+
+for _, row in df.iterrows():
+    important = row['important_characteristics'].lower()
+    has_all_four = all(f in important for f in ['danceability', 'valence', 'energy', 'acousticness'])
+    
+    participant_ratings = []
+    for i in range(n_songs):
+        if 'similar' in row[f'song_{i}_bucket']:
+            participant_ratings.append(row[f'song_{i}_rating'])
+    
+    if participant_ratings:
+        participant_avg = np.mean(participant_ratings)
+        group = 'selected_all' if has_all_four else 'not_selected_all'
+        participant_avgs[group].append(participant_avg)
+
+n_selected = len(participant_avgs['selected_all'])
+n_not_selected = len(participant_avgs['not_selected_all'])
+
+fig, ax = plt.subplots(figsize=(10, 7))
+
+categories = ['Selected ALL 4\nFeatures as Important', 'Did NOT Select\nAll 4 Features']
+means = [np.mean(participant_avgs['selected_all']), np.mean(participant_avgs['not_selected_all'])]
+stds = [np.std(participant_avgs['selected_all']), np.std(participant_avgs['not_selected_all'])]
+counts = [n_selected, n_not_selected]
+
+colors = ['#4a7c59', '#c17c74']
+bars = ax.bar(categories, means, yerr=stds, capsize=10, color=colors, 
+               alpha=0.85, edgecolor='black', linewidth=2)
+
+ax.set_ylabel('Average Rating (1-5)', fontsize=14, fontweight='bold')
+ax.set_xlabel('Participant Group', fontsize=14, fontweight='bold')
+ax.set_ylim(0, 5.5)
+ax.axhline(y=3, color='gray', linestyle='--', alpha=0.5, label='Neutral (3.0)')
+ax.legend(fontsize=11)
+ax.grid(axis='y', alpha=0.3)
+
+for bar, mean, count in zip(bars, means, counts):
+    height = bar.get_height()
+    ax.text(bar.get_x() + bar.get_width()/2., height + 0.15,
+            f'{mean:.2f}\n(n={count} participants)', ha='center', va='bottom', 
+            fontweight='bold', fontsize=11)
+
+plt.tight_layout()
+plt.savefig('../figures/SQ2_feature_awareness.png', dpi=300, bbox_inches='tight')
+print('✓ SQ2_feature_awareness.png')
+
+# ============================================================================
+# SQ2b: Individual Feature Selection
+# ============================================================================
+features_to_check = ['danceability', 'valence', 'energy', 'acousticness']
+feature_data = {f: {'selected': [], 'not_selected': []} for f in features_to_check}
+
+for _, row in df.iterrows():
+    important = row['important_characteristics'].lower()
+    
+    participant_ratings = []
+    for i in range(n_songs):
+        if 'similar' in row[f'song_{i}_bucket']:
+            participant_ratings.append(row[f'song_{i}_rating'])
+    
+    if participant_ratings:
+        participant_avg = np.mean(participant_ratings)
+        
+        for feature in features_to_check:
+            group = 'selected' if feature in important else 'not_selected'
+            feature_data[feature][group].append(participant_avg)
+
+fig, ax = plt.subplots(figsize=(14, 7))
+
+feature_labels = ['Danceability', 'Valence', 'Energy', 'Acousticness']
+x = np.arange(len(feature_labels))
+width = 0.35
+
+selected_means = [np.mean(feature_data[f]['selected']) for f in features_to_check]
+not_selected_means = [np.mean(feature_data[f]['not_selected']) for f in features_to_check]
+selected_stds = [np.std(feature_data[f]['selected']) for f in features_to_check]
+not_selected_stds = [np.std(feature_data[f]['not_selected']) for f in features_to_check]
+
+bars1 = ax.bar(x - width/2, selected_means, width, yerr=selected_stds,
+               label='Selected this feature', color='#4a7c59', alpha=0.85,
+               edgecolor='black', linewidth=1.5, capsize=5)
+bars2 = ax.bar(x + width/2, not_selected_means, width, yerr=not_selected_stds,
+               label='Did NOT select this feature', color='#c17c74', alpha=0.85,
+               edgecolor='black', linewidth=1.5, capsize=5)
+
+ax.set_ylabel('Average Rating (1-5)', fontsize=14, fontweight='bold')
+ax.set_xlabel('Algorithm Feature', fontsize=14, fontweight='bold')
+ax.set_xticks(x)
+ax.set_xticklabels(feature_labels)
+ax.set_ylim(0, 5.5)
+ax.axhline(y=3, color='gray', linestyle='--', alpha=0.5, label='Neutral (3.0)')
+ax.legend(fontsize=12, loc='upper right')
+ax.grid(axis='y', alpha=0.3)
+
+for i, (f, label) in enumerate(zip(features_to_check, feature_labels)):
+    n_sel = len(feature_data[f]['selected'])
+    n_not = len(feature_data[f]['not_selected'])
+    ax.text(i - width/2, -0.3, f'n={n_sel}', ha='center', fontsize=9, color='#4a7c59', fontweight='bold')
+    ax.text(i + width/2, -0.3, f'n={n_not}', ha='center', fontsize=9, color='#c17c74', fontweight='bold')
+
+for bars in [bars1, bars2]:
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height + 0.05,
+                f'{height:.2f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
+
+plt.tight_layout()
+plt.savefig('../figures/SQ2_individual_features.png', dpi=300, bbox_inches='tight')
+print('✓ SQ2_individual_features.png')
+
+# ============================================================================
+# SQ3: Perception Accuracy - Important vs Less Important Features
+# ============================================================================
+perception_data = []
+
+for _, row in df.iterrows():
+    important_features = row['important_characteristics'].lower()
+    
+    for i in range(n_songs):
+        track_name = row[f'song_{i}_track']
+        
+        if pd.notna(track_name):
+            song_data = songs_df[songs_df['trackname'] == track_name]
+            
+            if not song_data.empty:
+                song_actual = song_data.iloc[0]
+                
+                for feature in ['danceability', 'liveness', 'valence', 'energy', 'acousticness']:
+                    perceived = row[f'song_{i}_{feature}']
+                    actual = song_actual[feature]
+                    
+                    if pd.notna(perceived) and pd.notna(actual):
+                        error = calculate_binned_error(perceived, actual)
+                        is_important = feature in important_features
+                        
+                        perception_data.append({
+                            'feature': feature,
+                            'perceived_rating': perceived,
+                            'actual': actual,
+                            'error': error,
+                            'is_important': is_important
+                        })
+
+perc_df = pd.DataFrame(perception_data)
+
+# Calculate mean errors for important vs not important
+feature_stats = {}
+for feature in ['danceability', 'valence', 'energy', 'acousticness']:
+    important_data = perc_df[(perc_df['feature'] == feature) & (perc_df['is_important'] == True)]
+    not_important_data = perc_df[(perc_df['feature'] == feature) & (perc_df['is_important'] == False)]
+    
+    mean_error_important = important_data['error'].mean() if len(important_data) > 0 else 0
+    mean_error_not_important = not_important_data['error'].mean() if len(not_important_data) > 0 else 0
+    
+    feature_stats[feature] = {
+        'important': mean_error_important,
+        'not_important': mean_error_not_important,
+        'n_important': len(important_data),
+        'n_not_important': len(not_important_data)
+    }
+
+# Visualization
+fig, ax = plt.subplots(figsize=(12, 8))
+
+features = ['Danceability', 'Valence', 'Energy', 'Acousticness']
+feature_keys = ['danceability', 'valence', 'energy', 'acousticness']
+
+x = np.arange(len(features))
+width = 0.35
+
+important_errors = [feature_stats[k]['important'] for k in feature_keys]
+not_important_errors = [feature_stats[k]['not_important'] for k in feature_keys]
+
+bars1 = ax.bar(x - width/2, important_errors, width, 
+               label='User finds this feature important', color='#4a7c59', alpha=0.85,
+               edgecolor='black', linewidth=1.5)
+bars2 = ax.bar(x + width/2, not_important_errors, width,
+               label='User does NOT find this feature important', color='#c17c74', alpha=0.85,
+               edgecolor='black', linewidth=1.5)
+
+ax.set_ylabel('Mean Binned Error', fontsize=14, fontweight='bold')
+ax.set_xlabel('Audio Feature', fontsize=14, fontweight='bold')
+ax.set_xticks(x)
+ax.set_xticklabels(features)
+ax.set_ylim(0, max(max(important_errors), max(not_important_errors)) * 1.2)
+
+ax.axhline(y=0, color='green', linestyle='--', linewidth=1.5, alpha=0.5, label='Perfect (0.0)')
+ax.legend(fontsize=11, loc='upper right')
+ax.grid(axis='y', alpha=0.3)
+
+# Add value labels
+for i, (bar1, bar2, feature_key) in enumerate(zip(bars1, bars2, feature_keys)):
+    height1 = bar1.get_height()
+    height2 = bar2.get_height()
+    
+    ax.text(bar1.get_x() + bar1.get_width()/2., height1 + 0.005,
+            f'{height1:.3f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
+    ax.text(bar2.get_x() + bar2.get_width()/2., height2 + 0.005,
+            f'{height2:.3f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
+    
+    # Add sample sizes below
+    n_imp = feature_stats[feature_key]['n_important']
+    n_not = feature_stats[feature_key]['n_not_important']
+    ax.text(bar1.get_x() + bar1.get_width()/2., -0.01,
+            f'n={n_imp}', ha='center', va='top', fontsize=9, color='#4a7c59', fontweight='bold')
+    ax.text(bar2.get_x() + bar2.get_width()/2., -0.01,
+            f'n={n_not}', ha='center', va='top', fontsize=9, color='#c17c74', fontweight='bold')
+
+plt.tight_layout()
+plt.savefig('../figures/SQ3_perception_accuracy.png', dpi=300, bbox_inches='tight')
+print('✓ SQ3_perception_accuracy.png')
+
+# ============================================================================
+# SQ4: Musical Sophistication and Feature Recognition
+# ============================================================================
+# Calculate perception error by participant
+participant_errors = {}
+
+for _, row in df.iterrows():
+    participant_id = row['email']
+    msae = row['MSAE'] if pd.notna(row['MSAE']) else None
+    mse = row['MSE'] if pd.notna(row['MSE']) else None
+    
+    if msae is None:
+        continue
+    
+    errors_by_feature = {f: [] for f in ['danceability', 'valence', 'energy', 'acousticness']}
+    
+    for i in range(n_songs):
+        track_name = row[f'song_{i}_track']
+        
+        if pd.notna(track_name):
+            song_data = songs_df[songs_df['trackname'] == track_name]
+            
+            if not song_data.empty:
+                song_actual = song_data.iloc[0]
+                
+                for feature in ['danceability', 'valence', 'energy', 'acousticness']:
+                    perceived = row[f'song_{i}_{feature}']
+                    actual = song_actual[feature]
+                    
+                    if pd.notna(perceived) and pd.notna(actual):
+                        error = calculate_binned_error(perceived, actual)
+                        errors_by_feature[feature].append(error)
+    
+    participant_errors[participant_id] = {
+        'MSAE': msae,
+        'MSE': mse,
+        'errors': {f: np.mean(errors_by_feature[f]) if errors_by_feature[f] else None 
+                   for f in ['danceability', 'valence', 'energy', 'acousticness']},
+        'overall_error': np.mean([e for errors in errors_by_feature.values() for e in errors])
+    }
+
+# Create visualization with both MSAE and MSE
+fig, axes = plt.subplots(2, 4, figsize=(18, 10))
+
+features = ['danceability', 'valence', 'energy', 'acousticness']
+feature_labels = ['Danceability', 'Valence', 'Energy', 'Acousticness']
+colors = ['#4a7c59', '#8b6f9e', '#d4a574', '#6b8fb5']
+
+# Top row: MSAE (Active Engagement)
+for idx, (feature, label, color) in enumerate(zip(features, feature_labels, colors)):
+    ax = axes[0, idx]
+    
+    # Extract data
+    msae_vals = []
+    error_vals = []
+    
+    for participant_id, data in participant_errors.items():
+        if data['errors'][feature] is not None:
+            msae_vals.append(data['MSAE'])
+            error_vals.append(data['errors'][feature])
+    
+    # Scatter plot
+    ax.scatter(msae_vals, error_vals, s=100, alpha=0.6, color=color, edgecolor='black', linewidth=1)
+    
+    # Add regression line
+    if len(msae_vals) > 1:
+        z = np.polyfit(msae_vals, error_vals, 1)
+        p = np.poly1d(z)
+        x_line = np.linspace(min(msae_vals), max(msae_vals), 100)
+        ax.plot(x_line, p(x_line), "r--", alpha=0.8, linewidth=2)
+        
+        # Calculate correlation
+        corr = np.corrcoef(msae_vals, error_vals)[0, 1]
+        
+        # Add correlation text
+        ax.text(0.05, 0.95, f'r = {corr:.3f}\nn = {len(msae_vals)}', 
+                transform=ax.transAxes, fontsize=10, fontweight='bold',
+                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+    
+    ax.set_xlabel('MSAE (Active Engagement)', fontsize=11, fontweight='bold')
+    ax.set_ylabel('Mean Binned Error', fontsize=11, fontweight='bold')
+    ax.grid(True, alpha=0.3)
+    ax.set_ylim(0, max(error_vals) * 1.1 if error_vals else 0.5)
+
+# Bottom row: MSE (Emotions)
+for idx, (feature, label, color) in enumerate(zip(features, feature_labels, colors)):
+    ax = axes[1, idx]
+    
+    # Extract data
+    mse_vals = []
+    error_vals = []
+    
+    for participant_id, data in participant_errors.items():
+        if data['errors'][feature] is not None and data['MSE'] is not None:
+            mse_vals.append(data['MSE'])
+            error_vals.append(data['errors'][feature])
+    
+    # Scatter plot
+    ax.scatter(mse_vals, error_vals, s=100, alpha=0.6, color=color, edgecolor='black', linewidth=1)
+    
+    # Add regression line
+    if len(mse_vals) > 1:
+        z = np.polyfit(mse_vals, error_vals, 1)
+        p = np.poly1d(z)
+        x_line = np.linspace(min(mse_vals), max(mse_vals), 100)
+        ax.plot(x_line, p(x_line), "r--", alpha=0.8, linewidth=2)
+        
+        # Calculate correlation
+        corr = np.corrcoef(mse_vals, error_vals)[0, 1]
+        
+        # Add correlation text
+        ax.text(0.05, 0.95, f'r = {corr:.3f}\nn = {len(mse_vals)}', 
+                transform=ax.transAxes, fontsize=10, fontweight='bold',
+                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+    
+    ax.set_xlabel('MSE (Emotions)', fontsize=11, fontweight='bold')
+    ax.set_ylabel('Mean Binned Error', fontsize=11, fontweight='bold')
+    ax.grid(True, alpha=0.3)
+    ax.set_ylim(0, max(error_vals) * 1.1 if error_vals else 0.5)
+
+plt.tight_layout()
+plt.savefig('../figures/SQ4_musical_sophistication.png', dpi=300, bbox_inches='tight')
+print('✓ SQ4_musical_sophistication.png')
+
+print('\n✓ Analysis complete!')

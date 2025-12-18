@@ -1,0 +1,1520 @@
+{
+  "kittytail@hotmail.co.uk": [
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "harryhall3698@gmail.com": [
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "l.j.vanvoorden@tilburguniversity.edu": [
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Raised on Country",
+      "artist": "Chris Young",
+      "spotifyurl": "https://open.spotify.com/track/6voi5xnLs9JKmWG2oLmgDU",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02dcc6070faa6e13ba3e4a2a3c",
+      "track_id": "6voi5xnLs9JKmWG2oLmgDU",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "r.s.kramer_1@tilburguniversity.edu": [
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Beast Of Burden - Remastered",
+      "artist": "The Rolling Stones",
+      "spotifyurl": "https://open.spotify.com/track/77oU2rjC5XbjQfNe3bD6so",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0205c7aec05eabf142cc33b936",
+      "track_id": "77oU2rjC5XbjQfNe3bD6so",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Trigger",
+      "artist": "Major Lazer",
+      "spotifyurl": "https://open.spotify.com/track/0Z26mbSHJ1dkUu7g9DDgif",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028c639ee98d8019336de10bfd",
+      "track_id": "0Z26mbSHJ1dkUu7g9DDgif",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "j.m.spuesens@tilburguniversity.edu": [
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Get Money (feat. Junior M.A.F.I.A.) - 2007 Remaster",
+      "artist": "The Notorious B.I.G.",
+      "spotifyurl": "https://open.spotify.com/track/3PA9dH8cT0wR5UW4XkC44Y",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02639fea4197e676cfe9512e04",
+      "track_id": "3PA9dH8cT0wR5UW4XkC44Y",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "At My Worst (feat. Kehlani)",
+      "artist": "Pink Sweat$",
+      "spotifyurl": "https://open.spotify.com/track/5OdNjYTpLjuDDPCBNWonRX",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0275af9fb0fa8dc8f3adef6905",
+      "track_id": "5OdNjYTpLjuDDPCBNWonRX",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Bad Boy (with Young Thug)",
+      "artist": "Juice WRLD",
+      "spotifyurl": "https://open.spotify.com/track/43CIWpJaJHRcI4mUSjqgc2",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e020bda1f6aa92d42f44d621db6",
+      "track_id": "43CIWpJaJHRcI4mUSjqgc2",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Rockin' That Shit",
+      "artist": "The-Dream",
+      "spotifyurl": "https://open.spotify.com/track/3RBGG1be9aBaSvjnw6ABkh",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024895d86d023cc3aef4fb1210",
+      "track_id": "3RBGG1be9aBaSvjnw6ABkh",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "alettakramer@gmail.com": [
+    {
+      "trackname": "Antidote - Radio Edit",
+      "artist": "Swedish House Mafia",
+      "spotifyurl": "https://open.spotify.com/track/38JE3O2HocFNvtljgtlNKv",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02b5e2d50a848f3671bdd01233",
+      "track_id": "38JE3O2HocFNvtljgtlNKv",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "The Prince",
+      "artist": "Madeon",
+      "spotifyurl": "https://open.spotify.com/track/5MT2w1BexEAWjJ62OOHE6q",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0218dfaad83b61579bdf6983d4",
+      "track_id": "5MT2w1BexEAWjJ62OOHE6q",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Falaise",
+      "artist": "Floating Points",
+      "spotifyurl": "https://open.spotify.com/track/3rkJH9BaiCWpRY718WTkBP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d03dff7f5eeee485e5a45f62",
+      "track_id": "3rkJH9BaiCWpRY718WTkBP",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Colours",
+      "artist": "Mat Zo",
+      "spotifyurl": "https://open.spotify.com/track/22y2mqIBERBviZF0fa86iw",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c3e9d03dfb43f69d0bae768f",
+      "track_id": "22y2mqIBERBviZF0fa86iw",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "While We're Young",
+      "artist": "Jhen\u00e9 Aiko",
+      "spotifyurl": "https://open.spotify.com/track/4mL59LVbKgOpEACxraGYdr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ccc8005498d9f75b03333c2",
+      "track_id": "4mL59LVbKgOpEACxraGYdr",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "r.kramer@genexis.eu": [
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Centerfold",
+      "artist": "The J. Geils Band",
+      "spotifyurl": "https://open.spotify.com/track/1ynmMEK1fkyiZ6Z6F3ThEt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0238b2429ef948e6ca8d3ab599",
+      "track_id": "1ynmMEK1fkyiZ6Z6F3ThEt",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "The Prince",
+      "artist": "Madeon",
+      "spotifyurl": "https://open.spotify.com/track/5MT2w1BexEAWjJ62OOHE6q",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0218dfaad83b61579bdf6983d4",
+      "track_id": "5MT2w1BexEAWjJ62OOHE6q",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "All I Do Is Win (feat. T-Pain, Ludacris, Snoop Dogg & Rick Ross)",
+      "artist": "DJ Khaled",
+      "spotifyurl": "https://open.spotify.com/track/12PNcnMsjsZ3eHm62t8hiy",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e025de048eb9ca94916178afb20",
+      "track_id": "12PNcnMsjsZ3eHm62t8hiy",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Epilogue",
+      "artist": "Dario Marianelli",
+      "spotifyurl": "https://open.spotify.com/track/2otEJWkJVqEBV4sRRfkGMz",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c71e180bad76d6e5ed732edb",
+      "track_id": "2otEJWkJVqEBV4sRRfkGMz",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "kramer.marijke@kpnmail.nl": [
+    {
+      "trackname": "Danza Hungara N\u00ba5",
+      "artist": "Johannes Brahms",
+      "spotifyurl": "https://open.spotify.com/track/3TkuMS1MdVmLN6IBd9qpOt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e029cb08a2f9804ac4103231eca",
+      "track_id": "3TkuMS1MdVmLN6IBd9qpOt",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Requiem in D Minor, K. 626: 3. Sequentia: Dies irae - Live",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/2d7C38EFmRjhBoDVQlkBwq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02294e552253536ac3ff9361fb",
+      "track_id": "2d7C38EFmRjhBoDVQlkBwq",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "roosvanvoorden2004@gmail.com": [
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "She Sells Sanctuary",
+      "artist": "The Cult",
+      "spotifyurl": "https://open.spotify.com/track/3qLZ866ZfaK0B0R5FIqXLG",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0283803df78b7dd21d4fed27e4",
+      "track_id": "3qLZ866ZfaK0B0R5FIqXLG",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Beast Of Burden - Remastered",
+      "artist": "The Rolling Stones",
+      "spotifyurl": "https://open.spotify.com/track/77oU2rjC5XbjQfNe3bD6so",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0205c7aec05eabf142cc33b936",
+      "track_id": "77oU2rjC5XbjQfNe3bD6so",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Rockin' That Shit",
+      "artist": "The-Dream",
+      "spotifyurl": "https://open.spotify.com/track/3RBGG1be9aBaSvjnw6ABkh",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024895d86d023cc3aef4fb1210",
+      "track_id": "3RBGG1be9aBaSvjnw6ABkh",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "r.w.mast@tilburguniversity.edu": [
+    {
+      "trackname": "Be My Baby",
+      "artist": "The Ronettes",
+      "spotifyurl": "https://open.spotify.com/track/1WN4uNclrDuczTO3bCr8s1",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02b298efc29df3b69ec3f0d675",
+      "track_id": "1WN4uNclrDuczTO3bCr8s1",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "When the Going Gets Tough, The Tough Get Going",
+      "artist": "Billy Ocean",
+      "spotifyurl": "https://open.spotify.com/track/5UU5FbITNm5OunvHQdsKME",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0299ee23dac7128cb5754f593c",
+      "track_id": "5UU5FbITNm5OunvHQdsKME",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "A Song for You",
+      "artist": "Donny Hathaway",
+      "spotifyurl": "https://open.spotify.com/track/5spAjqC772iC2KzDvEkmSr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e0ebc1dc512103af0b79055a",
+      "track_id": "5spAjqC772iC2KzDvEkmSr",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Between the Sheets",
+      "artist": "The Isley Brothers",
+      "spotifyurl": "https://open.spotify.com/track/3ApIYu95WxjzpQCnsLBbrv",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ea02cbe06bc2538d3c10dad",
+      "track_id": "3ApIYu95WxjzpQCnsLBbrv",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Losing Sleep",
+      "artist": "Chris Young",
+      "spotifyurl": "https://open.spotify.com/track/6waqLPcT6ruMhmd36OhmFO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024f90c1c1e428bcf6615d5bed",
+      "track_id": "6waqLPcT6ruMhmd36OhmFO",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "nijdamgerben@gmail.com": [
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I'm a Slave 4 U",
+      "artist": "Britney Spears",
+      "spotifyurl": "https://open.spotify.com/track/6ldwfK0yWgTAlmIfuQkTYN",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e1a4e01cb7a1ecff468bbead",
+      "track_id": "6ldwfK0yWgTAlmIfuQkTYN",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "f.vdnbrekel@tilburguniversity.edu": [
+    {
+      "trackname": "Requiem in D Minor, K. 626: 3. Sequentia: Dies irae - Live",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/2d7C38EFmRjhBoDVQlkBwq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02294e552253536ac3ff9361fb",
+      "track_id": "2d7C38EFmRjhBoDVQlkBwq",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Danza Hungara N\u00ba5",
+      "artist": "Johannes Brahms",
+      "spotifyurl": "https://open.spotify.com/track/3TkuMS1MdVmLN6IBd9qpOt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e029cb08a2f9804ac4103231eca",
+      "track_id": "3TkuMS1MdVmLN6IBd9qpOt",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "A Teenager In Love",
+      "artist": "Dion & The Belmonts",
+      "spotifyurl": "https://open.spotify.com/track/0QGwOFQChzflLAmPq5NwKo",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027a609132064a415169a915cc",
+      "track_id": "0QGwOFQChzflLAmPq5NwKo",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "When You Leave - Breathe Carolina Remix",
+      "artist": "Nikki Vianna",
+      "spotifyurl": "https://open.spotify.com/track/5y8Yvxc2Y1gIBSQCwlSh0p",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c20bc36047bfbaede09c138e",
+      "track_id": "5y8Yvxc2Y1gIBSQCwlSh0p",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Your Love (feat. Jamie Principle)",
+      "artist": "Frankie Knuckles",
+      "spotifyurl": "https://open.spotify.com/track/6tvtFyEdNpeurBkT2zNMEL",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e71c53b1e7e74ddcaa427755",
+      "track_id": "6tvtFyEdNpeurBkT2zNMEL",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "jackmeijer28@live.nl": [
+    {
+      "trackname": "While We're Young",
+      "artist": "Jhen\u00e9 Aiko",
+      "spotifyurl": "https://open.spotify.com/track/4mL59LVbKgOpEACxraGYdr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ccc8005498d9f75b03333c2",
+      "track_id": "4mL59LVbKgOpEACxraGYdr",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "How You Want It? (feat. King Combs)",
+      "artist": "Teyana Taylor",
+      "spotifyurl": "https://open.spotify.com/track/1UgcHFkETFCydO4u8JXQMj",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e023c1d50d3467be460844da7c1",
+      "track_id": "1UgcHFkETFCydO4u8JXQMj",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "A Song for You",
+      "artist": "Donny Hathaway",
+      "spotifyurl": "https://open.spotify.com/track/5spAjqC772iC2KzDvEkmSr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e0ebc1dc512103af0b79055a",
+      "track_id": "5spAjqC772iC2KzDvEkmSr",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Have You Ever",
+      "artist": "Brandy",
+      "spotifyurl": "https://open.spotify.com/track/6tBD4yjOf9P8rWwUlXdJFm",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0289c9590c941cec56429f2456",
+      "track_id": "6tBD4yjOf9P8rWwUlXdJFm",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "ambervdheuvel007@gmail.com": [
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I Need a Girl (Pt. 1) [feat. Usher & Loon]",
+      "artist": "Diddy",
+      "spotifyurl": "https://open.spotify.com/track/7lVNTXkI3cHFvcXiI8damb",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ecfb05160a4e09bb3194137",
+      "track_id": "7lVNTXkI3cHFvcXiI8damb",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Get Money (feat. Junior M.A.F.I.A.) - 2007 Remaster",
+      "artist": "The Notorious B.I.G.",
+      "spotifyurl": "https://open.spotify.com/track/3PA9dH8cT0wR5UW4XkC44Y",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02639fea4197e676cfe9512e04",
+      "track_id": "3PA9dH8cT0wR5UW4XkC44Y",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Everyday (feat. Rod Stewart, Miguel & Mark Ronson)",
+      "artist": "A$AP Rocky",
+      "spotifyurl": "https://open.spotify.com/track/2N3U8uTYhjX2KwGT0pf5x0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0281a6a2cafab2e7a4066b5eec",
+      "track_id": "2N3U8uTYhjX2KwGT0pf5x0",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "tranjaney@gmail.com": [
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Raised on Country",
+      "artist": "Chris Young",
+      "spotifyurl": "https://open.spotify.com/track/6voi5xnLs9JKmWG2oLmgDU",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02dcc6070faa6e13ba3e4a2a3c",
+      "track_id": "6voi5xnLs9JKmWG2oLmgDU",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Babe",
+      "artist": "Sugarland",
+      "spotifyurl": "https://open.spotify.com/track/7fRruZ12gXGwBs0zXQ6e5V",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0233452cbadb9db9189edd7250",
+      "track_id": "7fRruZ12gXGwBs0zXQ6e5V",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Not Ready to Make Nice",
+      "artist": "The Chicks",
+      "spotifyurl": "https://open.spotify.com/track/6LCEyZZHFF4ebF1Mike1s5",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0289ccaf21947f7929189654dc",
+      "track_id": "6LCEyZZHFF4ebF1Mike1s5",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Between the Sheets",
+      "artist": "The Isley Brothers",
+      "spotifyurl": "https://open.spotify.com/track/3ApIYu95WxjzpQCnsLBbrv",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ea02cbe06bc2538d3c10dad",
+      "track_id": "3ApIYu95WxjzpQCnsLBbrv",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "At My Worst (feat. Kehlani)",
+      "artist": "Pink Sweat$",
+      "spotifyurl": "https://open.spotify.com/track/5OdNjYTpLjuDDPCBNWonRX",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0275af9fb0fa8dc8f3adef6905",
+      "track_id": "5OdNjYTpLjuDDPCBNWonRX",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "bloemvdbrekel@outlook.com": [
+    {
+      "trackname": "Trigger",
+      "artist": "Major Lazer",
+      "spotifyurl": "https://open.spotify.com/track/0Z26mbSHJ1dkUu7g9DDgif",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028c639ee98d8019336de10bfd",
+      "track_id": "0Z26mbSHJ1dkUu7g9DDgif",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Arguru 2k19",
+      "artist": "deadmau5",
+      "spotifyurl": "https://open.spotify.com/track/5cr1Daz7Kv03CNb51I18sy",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0293d48c2fbccc49bcd406146e",
+      "track_id": "5cr1Daz7Kv03CNb51I18sy",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "When You Leave - Breathe Carolina Remix",
+      "artist": "Nikki Vianna",
+      "spotifyurl": "https://open.spotify.com/track/5y8Yvxc2Y1gIBSQCwlSh0p",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c20bc36047bfbaede09c138e",
+      "track_id": "5y8Yvxc2Y1gIBSQCwlSh0p",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "J\u00f3ga",
+      "artist": "Bj\u00f6rk",
+      "spotifyurl": "https://open.spotify.com/track/18NehrWLUFK7NPH522YQMQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02b6f50e46dac445dff914a56f",
+      "track_id": "18NehrWLUFK7NPH522YQMQ",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Everyday (feat. Rod Stewart, Miguel & Mark Ronson)",
+      "artist": "A$AP Rocky",
+      "spotifyurl": "https://open.spotify.com/track/2N3U8uTYhjX2KwGT0pf5x0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0281a6a2cafab2e7a4066b5eec",
+      "track_id": "2N3U8uTYhjX2KwGT0pf5x0",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "woutvdveldenspam@gmail.com": [
+    {
+      "trackname": "Young, Wild & Free (feat. Bruno Mars)",
+      "artist": "Snoop Dogg",
+      "spotifyurl": "https://open.spotify.com/track/3FNy4yzOhHhFBeA5p4ofoq",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fbd3128cc27caae9c0f1c03a",
+      "track_id": "3FNy4yzOhHhFBeA5p4ofoq",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "I Need a Girl (Pt. 1) [feat. Usher & Loon]",
+      "artist": "Diddy",
+      "spotifyurl": "https://open.spotify.com/track/7lVNTXkI3cHFvcXiI8damb",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ecfb05160a4e09bb3194137",
+      "track_id": "7lVNTXkI3cHFvcXiI8damb",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "At My Worst (feat. Kehlani)",
+      "artist": "Pink Sweat$",
+      "spotifyurl": "https://open.spotify.com/track/5OdNjYTpLjuDDPCBNWonRX",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0275af9fb0fa8dc8f3adef6905",
+      "track_id": "5OdNjYTpLjuDDPCBNWonRX",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Get Money (feat. Junior M.A.F.I.A.) - 2007 Remaster",
+      "artist": "The Notorious B.I.G.",
+      "spotifyurl": "https://open.spotify.com/track/3PA9dH8cT0wR5UW4XkC44Y",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02639fea4197e676cfe9512e04",
+      "track_id": "3PA9dH8cT0wR5UW4XkC44Y",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Rockin' That Shit",
+      "artist": "The-Dream",
+      "spotifyurl": "https://open.spotify.com/track/3RBGG1be9aBaSvjnw6ABkh",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024895d86d023cc3aef4fb1210",
+      "track_id": "3RBGG1be9aBaSvjnw6ABkh",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Losing Sleep",
+      "artist": "Chris Young",
+      "spotifyurl": "https://open.spotify.com/track/6waqLPcT6ruMhmd36OhmFO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024f90c1c1e428bcf6615d5bed",
+      "track_id": "6waqLPcT6ruMhmd36OhmFO",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Epilogue",
+      "artist": "Dario Marianelli",
+      "spotifyurl": "https://open.spotify.com/track/2otEJWkJVqEBV4sRRfkGMz",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c71e180bad76d6e5ed732edb",
+      "track_id": "2otEJWkJVqEBV4sRRfkGMz",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "veldenk2@gmail.com": [
+    {
+      "trackname": "Centerfold",
+      "artist": "The J. Geils Band",
+      "spotifyurl": "https://open.spotify.com/track/1ynmMEK1fkyiZ6Z6F3ThEt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0238b2429ef948e6ca8d3ab599",
+      "track_id": "1ynmMEK1fkyiZ6Z6F3ThEt",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Between the Sheets",
+      "artist": "The Isley Brothers",
+      "spotifyurl": "https://open.spotify.com/track/3ApIYu95WxjzpQCnsLBbrv",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ea02cbe06bc2538d3c10dad",
+      "track_id": "3ApIYu95WxjzpQCnsLBbrv",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "feevdbrekel@live.nl": [
+    {
+      "trackname": "How You Want It? (feat. King Combs)",
+      "artist": "Teyana Taylor",
+      "spotifyurl": "https://open.spotify.com/track/1UgcHFkETFCydO4u8JXQMj",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e023c1d50d3467be460844da7c1",
+      "track_id": "1UgcHFkETFCydO4u8JXQMj",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Rockin' That Shit",
+      "artist": "The-Dream",
+      "spotifyurl": "https://open.spotify.com/track/3RBGG1be9aBaSvjnw6ABkh",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e024895d86d023cc3aef4fb1210",
+      "track_id": "3RBGG1be9aBaSvjnw6ABkh",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "A Song for You",
+      "artist": "Donny Hathaway",
+      "spotifyurl": "https://open.spotify.com/track/5spAjqC772iC2KzDvEkmSr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e0ebc1dc512103af0b79055a",
+      "track_id": "5spAjqC772iC2KzDvEkmSr",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Un-Break My Heart - Classic Radio Mix",
+      "artist": "Toni Braxton",
+      "spotifyurl": "https://open.spotify.com/track/5lxWBU8FM7pqidZcDsgvb3",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e025b038ce8133b1abe96982481",
+      "track_id": "5lxWBU8FM7pqidZcDsgvb3",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "I Need a Girl (Pt. 1) [feat. Usher & Loon]",
+      "artist": "Diddy",
+      "spotifyurl": "https://open.spotify.com/track/7lVNTXkI3cHFvcXiI8damb",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ecfb05160a4e09bb3194137",
+      "track_id": "7lVNTXkI3cHFvcXiI8damb",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "julemackenbach2002@gmail.com": [
+    {
+      "trackname": "While We're Young",
+      "artist": "Jhen\u00e9 Aiko",
+      "spotifyurl": "https://open.spotify.com/track/4mL59LVbKgOpEACxraGYdr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ccc8005498d9f75b03333c2",
+      "track_id": "4mL59LVbKgOpEACxraGYdr",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Be My Baby",
+      "artist": "The Ronettes",
+      "spotifyurl": "https://open.spotify.com/track/1WN4uNclrDuczTO3bCr8s1",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02b298efc29df3b69ec3f0d675",
+      "track_id": "1WN4uNclrDuczTO3bCr8s1",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "A Song for You",
+      "artist": "Donny Hathaway",
+      "spotifyurl": "https://open.spotify.com/track/5spAjqC772iC2KzDvEkmSr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e0ebc1dc512103af0b79055a",
+      "track_id": "5spAjqC772iC2KzDvEkmSr",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Between the Sheets",
+      "artist": "The Isley Brothers",
+      "spotifyurl": "https://open.spotify.com/track/3ApIYu95WxjzpQCnsLBbrv",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ea02cbe06bc2538d3c10dad",
+      "track_id": "3ApIYu95WxjzpQCnsLBbrv",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "More Than A Woman - From \"Saturday Night Fever\" Soundtrack",
+      "artist": "Bee Gees",
+      "spotifyurl": "https://open.spotify.com/track/2cX2coZS1PYBfPs8wgbdWE",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02324045726c4b0deb6cb7c875",
+      "track_id": "2cX2coZS1PYBfPs8wgbdWE",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "I'm Alright",
+      "artist": "Jo Dee Messina",
+      "spotifyurl": "https://open.spotify.com/track/0MjT9xQqJrQlNrkWKZgFbQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e6781c9c7dd274d9d58abd94",
+      "track_id": "0MjT9xQqJrQlNrkWKZgFbQ",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Water Music Suite No. 1 In F, HWV 348: 2. Adagio e staccato",
+      "artist": "George Frideric Handel",
+      "spotifyurl": "https://open.spotify.com/track/7yCiB5SKKm9guqoonT9kVI",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0299fb351fb46ad3eab6e1689e",
+      "track_id": "7yCiB5SKKm9guqoonT9kVI",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "mielvandenbrekel@gmail.com": [
+    {
+      "trackname": "Runaway Train",
+      "artist": "Soul Asylum",
+      "spotifyurl": "https://open.spotify.com/track/3TW48DvQ7ChwY1Yy1tkMaP",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02a1b5db0138571e123e6c5894",
+      "track_id": "3TW48DvQ7ChwY1Yy1tkMaP",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Ramble On - 1990 Remaster",
+      "artist": "Led Zeppelin",
+      "spotifyurl": "https://open.spotify.com/track/3MODES4TNtygekLl146Dxd",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fc4f17340773c6c3579fea0d",
+      "track_id": "3MODES4TNtygekLl146Dxd",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Nutshell",
+      "artist": "Alice In Chains",
+      "spotifyurl": "https://open.spotify.com/track/2JuasWPUodaUxf5nwNpciQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02d09297cae57def4d8adc0749",
+      "track_id": "2JuasWPUodaUxf5nwNpciQ",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "How You Want It? (feat. King Combs)",
+      "artist": "Teyana Taylor",
+      "spotifyurl": "https://open.spotify.com/track/1UgcHFkETFCydO4u8JXQMj",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e023c1d50d3467be460844da7c1",
+      "track_id": "1UgcHFkETFCydO4u8JXQMj",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "I'm Alright",
+      "artist": "Jo Dee Messina",
+      "spotifyurl": "https://open.spotify.com/track/0MjT9xQqJrQlNrkWKZgFbQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e6781c9c7dd274d9d58abd94",
+      "track_id": "0MjT9xQqJrQlNrkWKZgFbQ",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "f.franken@tilburguniversity.edu": [
+    {
+      "trackname": "Danza Hungara N\u00ba5",
+      "artist": "Johannes Brahms",
+      "spotifyurl": "https://open.spotify.com/track/3TkuMS1MdVmLN6IBd9qpOt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e029cb08a2f9804ac4103231eca",
+      "track_id": "3TkuMS1MdVmLN6IBd9qpOt",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Serenade for Strings in C major, Op. 48: II. Walzer: Moderato, tempo di valse",
+      "artist": "Pyotr Ilyich Tchaikovsky",
+      "spotifyurl": "https://open.spotify.com/track/7uf3aFC1msj0t5cYImgOWy",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028a5ff5fdabe5dcf86777bde4",
+      "track_id": "7uf3aFC1msj0t5cYImgOWy",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Manon Lescaut / Act 2: \"In quelle trine morbide\"",
+      "artist": "Giacomo Puccini",
+      "spotifyurl": "https://open.spotify.com/track/3nbcin8kl89hboxQBKaLR0",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f859034db6e83a71632e03b0",
+      "track_id": "3nbcin8kl89hboxQBKaLR0",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Three Wooden Crosses",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/1S4fpfX2u0hzFD9vb6FEB6",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02fb9cb0832b7e12bde6032b83",
+      "track_id": "1S4fpfX2u0hzFD9vb6FEB6",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Deeper Than the Holler",
+      "artist": "Randy Travis",
+      "spotifyurl": "https://open.spotify.com/track/3xx0jE52PbtvwXgNaBUdch",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02f0ab934553fbf2c5816c3f7b",
+      "track_id": "3xx0jE52PbtvwXgNaBUdch",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Blue Eyes Crying In the Rain",
+      "artist": "Willie Nelson",
+      "spotifyurl": "https://open.spotify.com/track/2uRVPeQbsEpRQD0DKr1WTo",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e020e5489389aa853f454a4b1e8",
+      "track_id": "2uRVPeQbsEpRQD0DKr1WTo",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "When You Leave - Breathe Carolina Remix",
+      "artist": "Nikki Vianna",
+      "spotifyurl": "https://open.spotify.com/track/5y8Yvxc2Y1gIBSQCwlSh0p",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c20bc36047bfbaede09c138e",
+      "track_id": "5y8Yvxc2Y1gIBSQCwlSh0p",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ],
+  "pieter.drabbe@hotmail.com": [
+    {
+      "trackname": "Centerfold",
+      "artist": "The J. Geils Band",
+      "spotifyurl": "https://open.spotify.com/track/1ynmMEK1fkyiZ6Z6F3ThEt",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0238b2429ef948e6ca8d3ab599",
+      "track_id": "1ynmMEK1fkyiZ6Z6F3ThEt",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "Message In A Bottle",
+      "artist": "The Police",
+      "spotifyurl": "https://open.spotify.com/track/1oYYd2gnWZYrt89EBXdFiO",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028ec81cc654b45ade8bdf1486",
+      "track_id": "1oYYd2gnWZYrt89EBXdFiO",
+      "bucket": "same_genre_similar"
+    },
+    {
+      "trackname": "She Sells Sanctuary",
+      "artist": "The Cult",
+      "spotifyurl": "https://open.spotify.com/track/3qLZ866ZfaK0B0R5FIqXLG",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0283803df78b7dd21d4fed27e4",
+      "track_id": "3qLZ866ZfaK0B0R5FIqXLG",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "spotifyurl": "https://open.spotify.com/track/0wJoRiX5K5BxlqZTolB2LD",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02c9adfbd773852e286faed040",
+      "track_id": "0wJoRiX5K5BxlqZTolB2LD",
+      "bucket": "same_genre_dissimilar"
+    },
+    {
+      "trackname": "While We're Young",
+      "artist": "Jhen\u00e9 Aiko",
+      "spotifyurl": "https://open.spotify.com/track/4mL59LVbKgOpEACxraGYdr",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e027ccc8005498d9f75b03333c2",
+      "track_id": "4mL59LVbKgOpEACxraGYdr",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "I'm Alright",
+      "artist": "Jo Dee Messina",
+      "spotifyurl": "https://open.spotify.com/track/0MjT9xQqJrQlNrkWKZgFbQ",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e02e6781c9c7dd274d9d58abd94",
+      "track_id": "0MjT9xQqJrQlNrkWKZgFbQ",
+      "bucket": "diff_genre_similar"
+    },
+    {
+      "trackname": "Bassoon Concerto in B-Flat Major, K. 191: II. Andante ma adagio - Cadenza: Dietmar Zeman",
+      "artist": "Wolfgang Amadeus Mozart",
+      "spotifyurl": "https://open.spotify.com/track/3YMuw3U3COu7916J4H7psf",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e0269b4fa4443a228d9b78c484d",
+      "track_id": "3YMuw3U3COu7916J4H7psf",
+      "bucket": "diff_genre_dissimilar"
+    },
+    {
+      "trackname": "Cello Concerto in E Minor, Op.85 (1997 - Remaster): I. Adagio - Moderato",
+      "artist": "Edward Elgar",
+      "spotifyurl": "https://open.spotify.com/track/6DbYlWb6hAB4lOnOMWoR8F",
+      "imageurl": "https://i.scdn.co/image/ab67616d00001e028cbb816c087fdb4597e8e990",
+      "track_id": "6DbYlWb6hAB4lOnOMWoR8F",
+      "bucket": "diff_genre_dissimilar"
+    }
+  ]
+}

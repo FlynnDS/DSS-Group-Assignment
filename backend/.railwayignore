@@ -1,0 +1,50 @@
+# Railway Ignore - Only deploy what's needed
+
+# Analysis files
+../analysis/
+../figures/
+../docs/
+
+# Documentation
+*.md
+README.md
+
+# Development files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints
+
+# R files
+*.R
+*.Rdata
+*.Rhistory
+
+# Excel/CSV analysis files (but keep the data files we need)
+../data/*.xlsx
+
+# Git
+.git/
+.gitignore
+

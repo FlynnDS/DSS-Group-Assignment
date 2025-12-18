@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Follow-up DSS Study</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f0eb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #4a3428;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        ul {
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .info-box {
+            background-color: #d4b5a0;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .consent-checkbox {
+            display: flex;
+            align-items: flex-start;
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        .consent-checkbox input[type="checkbox"] {
+            margin-right: 15px;
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .consent-checkbox label {
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-info {
+            margin: 30px 0;
+            font-size: 16px;
+        }
+
+        .confirmation-box {
+            background-color: #d4b5a0;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .btn-confirm {
+            background-color: white;
+            border: 2px solid #4a3428;
+            padding: 12px 40px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-confirm:hover {
+            background-color: #4a3428;
+            color: white;
+        }
+
+        .btn-confirm:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            background-color: #4a3428;
+            color: white;
+            padding: 20px 40px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #4a3428;
+            text-decoration: underline;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header {
+                padding: 15px 20px;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .btn-confirm {
+                width: 100%;
+                padding: 15px 20px;
+            }
+        }
+
+        .email-input-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #e8ddd4;
+            border-radius: 4px;
+        }
+
+        .email-input-section label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .email-input-section input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #4a3428;
+            border-radius: 4px;
+        }
+
+        .email-input-section small {
+            display: block;
+            margin-top: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Follow-up DSS Study - Music Preference Survey
+    </div>
+
+    <div class="container">
+        <h1>Welcome to the Follow-up Study</h1>
+
+        <p>
+            Thank you for participating in our initial survey! As part of the DSS (Decision Support Systems) course, 
+            we (Group 2 students) have selected a set of songs based on your music preferences. 
+            This follow-up survey is conducted by students under the supervision of dr.ir. Martijn Willemsen.
+        </p>
+
+        <p>
+            This follow-up survey will take approximately 10-15 minutes. You will be asked to evaluate a selection of songs 
+            and provide your feedback on them. Your honest feedback will help us understand music preferences better.
+        </p>
+
+        <p>
+            <strong>Please note:</strong> We are asking for your consent again because this follow-up study involves 
+            collecting new data (your evaluations and ratings of the recommendations). Your participation in this 
+            follow-up is voluntary and independent from the initial survey.
+        </p>
+
+        <h2>Privacy and Data Use</h2>
+
+        <ul>
+            <li>Participation is voluntary and you may stop at any time without consequences.</li>
+            <li>Your personal data will not be shared outside the research team and will be deleted after the study.</li>
+            <li>All responses are stored securely on TU/e servers and analysed anonymously by the students.</li>
+            <li>Results will only be reported at a group level and may be used in academic assignments and presentations.</li>
+        </ul>
+
+        <div class="email-input-section">
+            <label for="email">Please enter your email address:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            <small>This should be the same email address you used in the initial survey. We use this to link your responses and provide you with your song selection.</small>
+        </div>
+
+        <p>
+            For full details, please read the <a href="Consent_DSS.pdf" target="_blank">Informed Consent Form</a> from the original study.
+        </p>
+
+        <div class="info-box">
+            Indicate if you also consent to the following (this is not required to participate in the study):
+        </div>
+
+        <div class="consent-checkbox">
+            <input type="checkbox" id="quotes-consent" name="quotes-consent">
+            <label for="quotes-consent">
+                I consent to the students using my anonymized feedback for example quotes in their academic reports 
+                and presentations – without my name being published in these.
+            </label>
+        </div>
+
+        <p class="contact-info">
+            If you have any questions, you can contact <strong>dr.ir. Martijn Willemsen</strong> (M.C.Willemsen@tue.nl).
+        </p>
+
+        <div class="consent-checkbox" style="background-color: #e8ddd4; border-radius: 4px;">
+            <input type="checkbox" id="main-consent" name="main-consent" required>
+            <label for="main-consent">
+                <strong>I confirm that I have read this information and agree to participate in this research project 
+                and consent to the use of my data as described above.</strong>
+            </label>
+        </div>
+
+        <div class="confirmation-box">
+            <p>By clicking Confirm, you will proceed to the survey.</p>
+            <button class="btn-confirm" id="confirm-btn" onclick="proceedToSurvey()">Confirm</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        (C) Group 2 - DSS Music Study - Martijn Willemsen
+    </div>
+
+    <script>
+        // Enable confirm button only when email is entered AND consent is checked
+        const emailInput = document.getElementById('email');
+        const mainConsent = document.getElementById('main-consent');
+        const confirmBtn = document.getElementById('confirm-btn');
+        
+        confirmBtn.disabled = true;
+        
+        function checkFormValidity() {
+            const emailValid = emailInput.value.trim() !== '' && emailInput.checkValidity();
+            const consentChecked = mainConsent.checked;
+            
+            if (emailValid && consentChecked) {
+                confirmBtn.disabled = false;
+            } else {
+                confirmBtn.disabled = true;
+            }
+        }
+        
+        emailInput.addEventListener('input', checkFormValidity);
+        mainConsent.addEventListener('change', checkFormValidity);
+
+        function proceedToSurvey() {
+            const email = document.getElementById('email').value;
+            const quotesConsent = document.getElementById('quotes-consent').checked;
+            
+            // Store the email and consent in sessionStorage to use in the next page
+            sessionStorage.setItem('participantEmail', email);
+            sessionStorage.setItem('quotesConsent', quotesConsent);
+            
+            // Redirect to the recommendations page
+            window.location.href = 'followup_recommendations.html';
+        }
+    </script>
+</body>
+</html>
+

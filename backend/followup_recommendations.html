@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Music Preference Survey</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f0eb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #4a3428;
+            color: white;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        .intro-text {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .instruction-box {
+            background-color: #d4b5a0;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .recommendation-card {
+            background-color: white;
+            border: 2px solid #4a3428;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .recommendation-header {
+            background-color: #4a3428;
+            color: white;
+            padding: 15px 20px;
+            margin: -30px -30px 20px -30px;
+            border-radius: 6px 6px 0 0;
+            font-size: 20px;
+        }
+
+        .recommendation-content {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .spotify-embed {
+            flex: 0 0 380px;
+        }
+
+        .rating-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question-label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-option input[type="radio"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .radio-option label {
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .star-rating {
+            display: flex;
+            gap: 6px;
+            font-size: 28px;
+        }
+
+        .star {
+            cursor: pointer;
+            color: #ddd;
+            transition: color 0.2s;
+        }
+
+        .star:hover,
+        .star.active {
+            color: #f4c150;
+        }
+
+        .characteristics-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .characteristics-table th,
+        .characteristics-table td {
+            padding: 8px 4px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .characteristics-table th:first-child,
+        .characteristics-table td:first-child {
+            text-align: left;
+            font-weight: 500;
+            padding-left: 0;
+            width: 120px;
+        }
+
+        .characteristics-table th {
+            font-size: 11px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .characteristics-table input[type="radio"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        .characteristics-section {
+            margin-top: 25px;
+        }
+
+        .characteristics-label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .characteristic-name {
+            position: relative;
+            cursor: help;
+            font-size: 13px;
+        }
+
+        .characteristic-tooltip {
+            font-size: 10px;
+            color: #888;
+            font-weight: normal;
+            display: block;
+            margin-top: 1px;
+            font-style: italic;
+        }
+
+        .info-icon {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-color: #4a3428;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 10px;
+            line-height: 14px;
+            cursor: help;
+            margin-left: 4px;
+            font-style: normal;
+            position: relative;
+        }
+
+        .info-popup {
+            display: none;
+            position: absolute;
+            left: 20px;
+            top: -10px;
+            background-color: #2d2d2d;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            line-height: 1.5;
+            width: 280px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            font-weight: normal;
+        }
+
+        .info-icon:hover .info-popup {
+            display: block;
+        }
+
+        .info-popup::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 15px;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-right: 6px solid #2d2d2d;
+        }
+
+        .preferences-section {
+            background-color: white;
+            border: 2px solid #4a3428;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .preferences-question {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .preferences-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .preference-option {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .preference-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .preference-option.selected {
+            border-color: #4a3428;
+            background-color: #f5f0eb;
+        }
+
+        .preference-option input[type="checkbox"] {
+            margin-right: 12px;
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        .preference-label {
+            flex: 1;
+            cursor: pointer;
+            pointer-events: none;
+        }
+
+        .preference-label .info-icon {
+            pointer-events: auto;
+        }
+
+        .preference-name {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .preference-description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .btn-submit {
+            background-color: #4a3428;
+            color: white;
+            border: none;
+            padding: 15px 50px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-submit:hover {
+            background-color: #5d4433;
+        }
+
+        .btn-submit:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .footer {
+            background-color: #4a3428;
+            color: white;
+            padding: 20px 40px;
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+            border: 1px solid #f5c6cb;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 968px) {
+            .recommendation-content {
+                flex-direction: column;
+            }
+
+            .spotify-embed {
+                flex: 1;
+                max-width: 100%;
+            }
+
+            .rating-section {
+                padding-left: 0;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .star {
+                font-size: 36px;
+            }
+
+            .characteristics-table {
+                font-size: 13px;
+            }
+
+            .characteristics-table input[type="radio"] {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* iPhone specific improvements */
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px 20px;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .recommendation-header {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+
+            .characteristics-table th {
+                font-size: 10px;
+                padding: 6px 2px;
+            }
+
+            .characteristics-table td {
+                padding: 8px 2px;
+            }
+
+            .preferences-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .preference-option {
+                padding: 15px 12px;
+            }
+
+            .preference-description {
+                font-size: 12px;
+            }
+
+            .info-icon {
+                width: 16px;
+                height: 16px;
+                font-size: 9px;
+                line-height: 16px;
+            }
+
+            .preferences-section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Follow-up DSS Study - Music Preference Survey
+    </div>
+
+    <div class="container">
+        <div id="loading" class="loading">
+            Loading your song selection...
+        </div>
+
+        <div id="error-container" style="display: none;"></div>
+
+        <div id="content" style="display: none;">
+            <h1>Music Preference Survey</h1>
+
+            <p class="intro-text">
+                Based on your responses in the initial survey, we have selected <strong>8 songs</strong> for you to evaluate. 
+                Please listen to each song and answer the questions below.
+            </p>
+
+            <div class="instruction-box">
+                <strong>Instructions:</strong> First, select up to 4 music characteristics that are important to you. 
+                Then for each song, please listen to at least 30 seconds, rate how much you like it, 
+                and indicate to what extent the song satisfies each characteristic. Your honest feedback is very valuable!
+            </div>
+
+            <form id="recommendations-form">
+                <div class="preferences-section">
+                    <div class="preferences-question">
+                        What elements of music are important to you when finding a song you like? (Select up to 4)
+                    </div>
+
+                    <div class="preferences-grid">
+                        <div class="preference-option" onclick="togglePreference('danceability', this, event)">
+                            <input type="checkbox" id="pref-danceability" name="preferences" value="danceability" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-danceability">
+                                <span class="preference-name">Danceability <span class="info-icon">i<span class="info-popup">Describes how suitable a track is for dancing based on tempo, rhythm stability, beat strength, and overall regularity.</span></span></span>
+                                <span class="preference-description">How suitable for dancing</span>
+                            </label>
+                        </div>
+
+                        <div class="preference-option" onclick="togglePreference('liveness', this, event)">
+                            <input type="checkbox" id="pref-liveness" name="preferences" value="liveness" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-liveness">
+                                <span class="preference-name">Liveness <span class="info-icon">i<span class="info-popup">Describes the probability that the song was recorded with a live audience. High values indicate strong likelihood that the track is live.</span></span></span>
+                                <span class="preference-description">Recorded with a live audience</span>
+                            </label>
+                        </div>
+
+                        <div class="preference-option" onclick="togglePreference('valence', this, event)">
+                            <input type="checkbox" id="pref-valence" name="preferences" value="valence" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-valence">
+                                <span class="preference-name">Valence <span class="info-icon">i<span class="info-popup">A measure describing the musical positiveness conveyed by a track. High valence sounds more positive (happy, cheerful, euphoric), while low valence sounds more negative (sad, depressed, angry).</span></span></span>
+                                <span class="preference-description">Musical positiveness (happy vs sad)</span>
+                            </label>
+                        </div>
+
+                        <div class="preference-option" onclick="togglePreference('energy', this, event)">
+                            <input type="checkbox" id="pref-energy" name="preferences" value="energy" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-energy">
+                                <span class="preference-name">Energy <span class="info-icon">i<span class="info-popup">Represents a perceptual measure of intensity and activity. Energetic tracks feel fast, loud, and noisy.</span></span></span>
+                                <span class="preference-description">Intensity and activity level</span>
+                            </label>
+                        </div>
+
+                        <div class="preference-option" onclick="togglePreference('acousticness', this, event)">
+                            <input type="checkbox" id="pref-acousticness" name="preferences" value="acousticness" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-acousticness">
+                                <span class="preference-name">Acousticness <span class="info-icon">i<span class="info-popup">Describes how acoustic a song is. High values indicate the song is most likely to be acoustic.</span></span></span>
+                                <span class="preference-description">Uses acoustic instruments</span>
+                            </label>
+                        </div>
+
+                        <div class="preference-option" onclick="togglePreference('speechiness', this, event)">
+                            <input type="checkbox" id="pref-speechiness" name="preferences" value="speechiness" onchange="checkPreferenceLimit(this)">
+                            <label class="preference-label" for="pref-speechiness">
+                                <span class="preference-name">Speechiness <span class="info-icon">i<span class="info-popup">Detects the presence of spoken words in a track. High values indicate the track is probably made of spoken words, while low values mean the song does not have speech.</span></span></span>
+                                <span class="preference-description">Contains spoken words</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="recommendations-container"></div>
+
+                <button type="submit" class="btn-submit" id="submit-btn">Submit Ratings</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        (C) Group 2 - DSS Music Study - Martijn Willemsen
+    </div>
+
+    <script>
+        let userEmail = '';
+        let recommendations = [];
+        let responses = {};
+        let selectedPreferences = [];
+
+        // Load recommendations data
+        async function loadRecommendations() {
+            try {
+                // Get email from session storage
+                userEmail = sessionStorage.getItem('participantEmail');
+                
+                if (!userEmail) {
+                    showError('No email found. Please go back to the consent page.');
+                    return;
+                }
+
+                // Load recommendations JSON
+                const response = await fetch('recommendations_data.json');
+                const data = await response.json();
+
+                // Get recommendations for this user
+                const emailLower = userEmail.toLowerCase();
+                recommendations = data[emailLower];
+
+                if (!recommendations || recommendations.length === 0) {
+                    showError('No songs found for this email address. Please make sure you used the same email as in the initial survey.');
+                    return;
+                }
+
+                // Display recommendations
+                displayRecommendations();
+                
+            } catch (error) {
+                console.error('Error loading songs:', error);
+                showError('Error loading songs. Please try again later.');
+            }
+        }
+
+        function showError(message) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error-container').style.display = 'block';
+            document.getElementById('error-container').innerHTML = `
+                <div class="error-message">
+                    <strong>Error:</strong> ${message}
+                </div>
+            `;
+        }
+
+        function displayRecommendations() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+
+            const container = document.getElementById('recommendations-container');
+            
+            recommendations.forEach((rec, index) => {
+                // Initialize response object for this recommendation
+                responses[index] = {
+                    trackname: rec.trackname,
+                    artist: rec.artist,
+                    bucket: rec.bucket,
+                    rating: null,
+                    characteristics: {
+                        danceability: null,
+                        liveness: null,
+                        valence: null,
+                        energy: null,
+                        acousticness: null
+                    }
+                };
+
+                const card = document.createElement('div');
+                card.className = 'recommendation-card';
+                
+                // Extract Spotify track ID from URL
+                const trackId = rec.track_id || rec.spotifyurl.split('/track/')[1];
+                
+                card.innerHTML = `
+                    <div class="recommendation-header">
+                        ${rec.trackname} - ${rec.artist}
+                    </div>
+
+                    <div class="recommendation-content">
+                        <div class="spotify-embed">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator" 
+                                width="100%" 
+                                height="152" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+
+                        <div class="rating-section">
+                            <div class="question">
+                                <label class="question-label">Rate how much you liked the song:</label>
+                                <div class="star-rating" id="stars-${index}">
+                                    ${[1, 2, 3, 4, 5].map(star => 
+                                        `<span class="star" data-value="${star}" onclick="setRating(${index}, ${star})">★</span>`
+                                    ).join('')}
+                                </div>
+                            </div>
+
+                            <div class="characteristics-section">
+                                <label class="characteristics-label">To what extent do you believe the song satisfies the following characteristics?</label>
+                        <table class="characteristics-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Not at all</th>
+                                    <th>Not much</th>
+                                    <th>Somewhat</th>
+                                    <th>Quite a bit</th>
+                                    <th>A lot</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="characteristic-name">
+                                            Danceability
+                                            <span class="characteristic-tooltip">suitable for dancing</span>
+                                        </div>
+                                    </td>
+                                    <td><input type="radio" name="danceability-${index}" value="1" onchange="updateCharacteristic(${index}, 'danceability', 1)" required></td>
+                                    <td><input type="radio" name="danceability-${index}" value="2" onchange="updateCharacteristic(${index}, 'danceability', 2)"></td>
+                                    <td><input type="radio" name="danceability-${index}" value="3" onchange="updateCharacteristic(${index}, 'danceability', 3)"></td>
+                                    <td><input type="radio" name="danceability-${index}" value="4" onchange="updateCharacteristic(${index}, 'danceability', 4)"></td>
+                                    <td><input type="radio" name="danceability-${index}" value="5" onchange="updateCharacteristic(${index}, 'danceability', 5)"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="characteristic-name">
+                                            Liveness
+                                            <span class="characteristic-tooltip">recorded with live audience</span>
+                                        </div>
+                                    </td>
+                                    <td><input type="radio" name="liveness-${index}" value="1" onchange="updateCharacteristic(${index}, 'liveness', 1)" required></td>
+                                    <td><input type="radio" name="liveness-${index}" value="2" onchange="updateCharacteristic(${index}, 'liveness', 2)"></td>
+                                    <td><input type="radio" name="liveness-${index}" value="3" onchange="updateCharacteristic(${index}, 'liveness', 3)"></td>
+                                    <td><input type="radio" name="liveness-${index}" value="4" onchange="updateCharacteristic(${index}, 'liveness', 4)"></td>
+                                    <td><input type="radio" name="liveness-${index}" value="5" onchange="updateCharacteristic(${index}, 'liveness', 5)"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="characteristic-name">
+                                            Valence
+                                            <span class="characteristic-tooltip">positiveness (happy vs sad)</span>
+                                        </div>
+                                    </td>
+                                    <td><input type="radio" name="valence-${index}" value="1" onchange="updateCharacteristic(${index}, 'valence', 1)" required></td>
+                                    <td><input type="radio" name="valence-${index}" value="2" onchange="updateCharacteristic(${index}, 'valence', 2)"></td>
+                                    <td><input type="radio" name="valence-${index}" value="3" onchange="updateCharacteristic(${index}, 'valence', 3)"></td>
+                                    <td><input type="radio" name="valence-${index}" value="4" onchange="updateCharacteristic(${index}, 'valence', 4)"></td>
+                                    <td><input type="radio" name="valence-${index}" value="5" onchange="updateCharacteristic(${index}, 'valence', 5)"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="characteristic-name">
+                                            Energy
+                                            <span class="characteristic-tooltip">intensity and activity</span>
+                                        </div>
+                                    </td>
+                                    <td><input type="radio" name="energy-${index}" value="1" onchange="updateCharacteristic(${index}, 'energy', 1)" required></td>
+                                    <td><input type="radio" name="energy-${index}" value="2" onchange="updateCharacteristic(${index}, 'energy', 2)"></td>
+                                    <td><input type="radio" name="energy-${index}" value="3" onchange="updateCharacteristic(${index}, 'energy', 3)"></td>
+                                    <td><input type="radio" name="energy-${index}" value="4" onchange="updateCharacteristic(${index}, 'energy', 4)"></td>
+                                    <td><input type="radio" name="energy-${index}" value="5" onchange="updateCharacteristic(${index}, 'energy', 5)"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="characteristic-name">
+                                            Acousticness
+                                            <span class="characteristic-tooltip">acoustic instruments</span>
+                                        </div>
+                                    </td>
+                                    <td><input type="radio" name="acousticness-${index}" value="1" onchange="updateCharacteristic(${index}, 'acousticness', 1)" required></td>
+                                    <td><input type="radio" name="acousticness-${index}" value="2" onchange="updateCharacteristic(${index}, 'acousticness', 2)"></td>
+                                    <td><input type="radio" name="acousticness-${index}" value="3" onchange="updateCharacteristic(${index}, 'acousticness', 3)"></td>
+                                    <td><input type="radio" name="acousticness-${index}" value="4" onchange="updateCharacteristic(${index}, 'acousticness', 4)"></td>
+                                    <td><input type="radio" name="acousticness-${index}" value="5" onchange="updateCharacteristic(${index}, 'acousticness', 5)"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        function updateResponse(index, field, value) {
+            responses[index][field] = value;
+            checkFormComplete();
+        }
+
+        function setRating(index, rating) {
+            responses[index].rating = rating;
+            
+            // Update star display
+            const stars = document.querySelectorAll(`#stars-${index} .star`);
+            stars.forEach((star, i) => {
+                if (i < rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+            
+            checkFormComplete();
+        }
+
+        function updateCharacteristic(index, characteristic, value) {
+            responses[index].characteristics[characteristic] = value;
+            checkFormComplete();
+        }
+
+        function togglePreference(value, element, event) {
+            // If clicking on the checkbox itself, let it handle naturally
+            if (event.target.type === 'checkbox') {
+                return;
+            }
+            
+            const checkbox = element.querySelector('input[type="checkbox"]');
+            if (!checkbox.checked && selectedPreferences.length >= 4) {
+                return; // Don't allow more than 4
+            }
+            checkbox.checked = !checkbox.checked;
+            checkPreferenceLimit(checkbox);
+        }
+
+        function checkPreferenceLimit(checkbox) {
+            const allCheckboxes = document.querySelectorAll('input[name="preferences"]');
+            selectedPreferences = Array.from(allCheckboxes).filter(cb => cb.checked).map(cb => cb.value);
+            
+            // Update visual feedback
+            allCheckboxes.forEach(cb => {
+                const parent = cb.closest('.preference-option');
+                if (cb.checked) {
+                    parent.classList.add('selected');
+                } else {
+                    parent.classList.remove('selected');
+                }
+            });
+            
+            // Disable unchecked boxes if 4 are selected
+            if (selectedPreferences.length >= 4) {
+                allCheckboxes.forEach(cb => {
+                    if (!cb.checked) {
+                        cb.disabled = true;
+                        cb.closest('.preference-option').style.opacity = '0.5';
+                        cb.closest('.preference-option').style.cursor = 'not-allowed';
+                    }
+                });
+            } else {
+                allCheckboxes.forEach(cb => {
+                    cb.disabled = false;
+                    cb.closest('.preference-option').style.opacity = '1';
+                    cb.closest('.preference-option').style.cursor = 'pointer';
+                });
+            }
+            
+            checkFormComplete();
+        }
+
+        function checkFormComplete() {
+            // Check if preferences are selected (at least 1, max 4)
+            const hasPreferences = selectedPreferences.length > 0 && selectedPreferences.length <= 4;
+            
+            // Check if all song responses are complete
+            const allComplete = Object.values(responses).every(r => {
+                const hasRating = r.rating !== null;
+                const hasAllCharacteristics = Object.values(r.characteristics).every(c => c !== null);
+                return hasRating && hasAllCharacteristics;
+            });
+            
+            document.getElementById('submit-btn').disabled = !(hasPreferences && allComplete);
+        }
+
+        document.getElementById('recommendations-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Disable submit button to prevent double submission
+            const submitBtn = document.getElementById('submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+            
+            // Prepare data for submission
+            const submissionData = {
+                email: userEmail,
+                timestamp: new Date().toISOString(),
+                quotesConsent: sessionStorage.getItem('quotesConsent') === 'true',
+                importantCharacteristics: selectedPreferences,
+                responses: responses
+            };
+
+            try {
+                // Send data to backend
+                const response = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(submissionData)
+                });
+
+                if (response.ok) {
+                    console.log('✓ Response saved successfully');
+                    
+                    // Also store in localStorage as backup
+                    localStorage.setItem('followup_responses_' + userEmail, JSON.stringify(submissionData));
+                    
+                    // Redirect to thank you page
+                    window.location.href = 'followup_thankyou.html';
+                } else {
+                    throw new Error('Server returned error: ' + response.status);
+                }
+            } catch (error) {
+                console.error('Error submitting response:', error);
+                
+                // Fallback: save to localStorage and continue
+                localStorage.setItem('followup_responses_' + userEmail, JSON.stringify(submissionData));
+                localStorage.setItem('followup_pending_' + userEmail, JSON.stringify(submissionData));
+                
+                alert('Warning: Unable to connect to server. Your response has been saved locally. Please contact the research team to ensure your response is recorded.');
+                
+                // Still redirect to thank you page
+                window.location.href = 'followup_thankyou.html';
+            }
+        });
+
+        // Load recommendations when page loads
+        window.addEventListener('DOMContentLoaded', loadRecommendations);
+
+        // Disable submit button initially
+        document.getElementById('submit-btn').disabled = true;
+    </script>
+</body>
+</html>
+

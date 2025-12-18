@@ -1,0 +1,739 @@
+Cargando paquete requerido: lme4
+Cargando paquete requerido: Matrix
+
+Adjuntando el paquete: 'lmerTest'
+
+The following object is masked from 'package:lme4':
+
+    lmer
+
+The following object is masked from 'package:stats':
+
+    step
+
+Aviso:
+package 'lme4' was built under R version 4.4.3 
+Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'
+
+========================================================================
+RQ: GENRE × FEATURE INTERACTION
+========================================================================
+
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: rating ~ same_genre * same_features + (1 | participant_id)
+   Data: rating_data
+
+REML criterion at convergence: 493.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.3282 -0.7006 -0.0331  0.7177  2.2678 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.2210   0.4701  
+ Residual                   0.9521   0.9757  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+                         Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)                2.6905     0.1822  72.8870  14.768  < 2e-16 ***
+same_genre                 0.2619     0.2129 144.0000   1.230 0.220684    
+same_features              0.8095     0.2129 144.0000   3.802 0.000211 ***
+same_genre:same_features  -0.5000     0.3011 144.0000  -1.660 0.098993 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) sm_gnr sm_ftr
+same_genre  -0.584              
+same_featrs -0.584  0.500       
+sm_gnr:sm_f  0.413 -0.707 -0.707
+
+--- Estimated Marginal Means ---
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ same_genre same_features emmean    SE   df lower.CL upper.CL
+          0             0   2.69 0.182 72.9     2.33     3.05
+          1             0   2.95 0.182 72.9     2.59     3.32
+          0             1   3.50 0.182 72.9     3.14     3.86
+          1             1   3.26 0.182 72.9     2.90     3.63
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+--- Pairwise Comparisons ---
+ contrast                                                estimate    SE  df
+ same_genre0 same_features0 - same_genre1 same_features0   -0.262 0.213 144
+ same_genre0 same_features0 - same_genre0 same_features1   -0.810 0.213 144
+ same_genre0 same_features0 - same_genre1 same_features1   -0.571 0.213 144
+ same_genre1 same_features0 - same_genre0 same_features1   -0.548 0.213 144
+ same_genre1 same_features0 - same_genre1 same_features1   -0.310 0.213 144
+ same_genre0 same_features1 - same_genre1 same_features1    0.238 0.213 144
+ t.ratio p.value
+  -1.230  0.6088
+  -3.802  0.0012
+  -2.684  0.0401
+  -2.572  0.0536
+  -1.454  0.4682
+   1.118  0.6789
+
+Degrees-of-freedom method: satterthwaite 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+
+
+========================================================================
+SQ1: FEATURE COMPENSATION
+Can similar features compensate for different genre?
+========================================================================
+
+ contrast            estimate    SE  df t.ratio p.value
+ Compensation Effect     0.81 0.213 144   3.802  0.0002
+
+Degrees-of-freedom method: satterthwaite 
+
+
+========================================================================
+SQ2: FEATURE AWARENESS (Individual Features)
+Do users rate songs higher when they selected that feature?
+========================================================================
+
+--- DANCEABILITY ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: as.formula(formula_str)
+   Data: rating_similar
+
+REML criterion at convergence: 238
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.64508 -0.69102  0.06532  0.63294  2.01938 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.09562  0.3092  
+ Residual                   0.89683  0.9470  
+Number of obs: 84, groups:  participant_id, 21
+
+Fixed effects:
+                      Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)             3.6136     0.1705 19.0000  21.193 1.11e-14 ***
+selected_danceability  -0.4886     0.2471 19.0000  -1.977   0.0627 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+slctd_dncbl -0.690
+
+Estimated Marginal Means:
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ selected_danceability emmean    SE df lower.CL upper.CL
+                     0   3.61 0.171 19     3.26     3.97
+                     1   3.12 0.179 19     2.75     3.50
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+--- VALENCE ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: as.formula(formula_str)
+   Data: rating_similar
+
+REML criterion at convergence: 239.7
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.4123 -0.5981 -0.1019  0.5571  1.9715 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.1351   0.3675  
+ Residual                   0.8968   0.9470  
+Number of obs: 84, groups:  participant_id, 21
+
+Fixed effects:
+                 Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)        3.0625     0.2997 19.0000  10.219 3.71e-09 ***
+selected_valence   0.3934     0.3331 19.0000   1.181    0.252    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+selctd_vlnc -0.900
+
+Estimated Marginal Means:
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ selected_valence emmean    SE df lower.CL upper.CL
+                0   3.06 0.300 19     2.44     3.69
+                1   3.46 0.145 19     3.15     3.76
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+--- ENERGY ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: as.formula(formula_str)
+   Data: rating_similar
+
+REML criterion at convergence: 240.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.44891 -0.55671 -0.00744  0.60910  1.88477 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.1598   0.3997  
+ Residual                   0.8968   0.9470  
+Number of obs: 84, groups:  participant_id, 21
+
+Fixed effects:
+                Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)       3.5000     0.4382 19.0000   7.988 1.72e-07 ***
+selected_energy  -0.1316     0.4607 19.0000  -0.286    0.778    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+selctd_nrgy -0.951
+
+Estimated Marginal Means:
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ selected_energy emmean    SE df lower.CL upper.CL
+               0   3.50 0.438 19     2.58     4.42
+               1   3.37 0.142 19     3.07     3.67
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+--- ACOUSTICNESS ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: as.formula(formula_str)
+   Data: rating_similar
+
+REML criterion at convergence: 241.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.42751 -0.55114  0.01192  0.57958  1.90549 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.1581   0.3976  
+ Residual                   0.8968   0.9470  
+Number of obs: 84, groups:  participant_id, 21
+
+Fixed effects:
+                      Estimate Std. Error      df t value Pr(>|t|)    
+(Intercept)             3.3333     0.1785 19.0000  18.675  1.1e-13 ***
+selected_acousticness   0.1111     0.2727 19.0000   0.408    0.688    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+slctd_cstcn -0.655
+
+Estimated Marginal Means:
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ selected_acousticness emmean    SE df lower.CL upper.CL
+                     0   3.33 0.178 19     2.96     3.71
+                     1   3.44 0.206 19     3.01     3.88
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+
+========================================================================
+SQ3: PERCEPTION ACCURACY BY FEATURE IMPORTANCE
+Are users better at recognizing features they find important?
+========================================================================
+
+--- Overall Effect ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important + (1 | participant_id)
+   Data: perception_data
+
+REML criterion at convergence: -355.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.1722 -0.7872 -0.3033  0.5039  3.4159 
+
+Random effects:
+ Groups         Name        Variance  Std.Dev.
+ participant_id (Intercept) 0.0009613 0.0310  
+ Residual                   0.0332047 0.1822  
+Number of obs: 672, groups:  participant_id, 21
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)            0.14880    0.01410  67.51465  10.556 6.22e-16 ***
+feature_is_important   0.01763    0.01554 540.67891   1.135    0.257    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ftr_s_mprtn -0.722
+
+Estimated Marginal Means:
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+ feature_is_important emmean     SE   df lower.CL upper.CL
+                    0  0.149 0.0141 67.5    0.121    0.177
+                    1  0.166 0.0111 31.6    0.144    0.189
+
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+
+--- By Individual Feature ---
+
+DANCEABILITY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -253.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.8653 -0.7654 -0.4102  0.7141  3.5314 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.01207  0.1098  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)            0.09506    0.01171 166.00000   8.118 1.02e-13 ***
+feature_is_important  -0.01098    0.01697 166.00000  -0.647    0.518    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ftr_s_mprtn -0.690
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+VALENCE:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -94.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.3433 -0.8499 -0.2374  0.7652  3.0525 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.001347 0.03671 
+ Residual                   0.030499 0.17464 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+                     Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)           0.14212    0.03592 19.00000   3.957 0.000845 ***
+feature_is_important  0.06085    0.03992 19.00000   1.524 0.143864    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ftr_s_mprtn -0.900
+
+ENERGY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -80.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.8420 -0.8420 -0.2948  0.5248  3.3469 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.03447  0.1857  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+                      Estimate Std. Error        df t value Pr(>|t|)   
+(Intercept)          1.494e-01  4.641e-02 1.660e+02   3.218  0.00155 **
+feature_is_important 6.963e-03  4.880e-02 1.660e+02   0.143  0.88670   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ftr_s_mprtn -0.951
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+ACOUSTICNESS:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -15.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.2225 -0.8088 -0.2023  0.7162  2.4604 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.002874 0.05361 
+ Residual                   0.048455 0.22012 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+                     Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)           0.19890    0.02728 19.00000   7.291 6.47e-07 ***
+feature_is_important  0.01313    0.04167 19.00000   0.315    0.756    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+ftr_s_mprtn -0.655
+
+
+========================================================================
+MUSICAL SOPHISTICATION EFFECTS
+Do users with higher musical sophistication recognize features better?
+========================================================================
+
+--- Overall Effect (MSAE + MSE) ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSAE + MSE + (1 | participant_id)
+   Data: perception_data
+
+REML criterion at convergence: -348
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.1595 -0.7750 -0.2907  0.5379  3.3436 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.001128 0.03358 
+ Residual                   0.033210 0.18224 
+Number of obs: 672, groups:  participant_id, 21
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)
+(Intercept)  0.1022457  0.0745245 17.9999996   1.372    0.187
+MSAE        -0.0009072  0.0155861 17.9999996  -0.058    0.954
+MSE          0.0115549  0.0182365 17.9999997   0.634    0.534
+
+Correlation of Fixed Effects:
+     (Intr) MSAE  
+MSAE -0.017       
+MSE  -0.738 -0.655
+
+--- Active Engagement (MSAE) by Feature ---
+
+DANCEABILITY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSAE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -254
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.0680 -0.7513 -0.4323  0.6983  3.5616 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.01194  0.1093  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)   0.150559   0.041776 166.000000   3.604 0.000414 ***
+MSAE         -0.014511   0.009777 166.000000  -1.484 0.139635    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+     (Intr)
+MSAE -0.979
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+VALENCE:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSAE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -90.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.3874 -0.8552 -0.2297  0.7570  3.0934 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.001976 0.04445 
+ Residual                   0.030499 0.17464 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)  
+(Intercept)  0.184094   0.082275 19.000001   2.238   0.0374 *
+MSAE         0.001742   0.019254 19.000001   0.090   0.9289  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+     (Intr)
+MSAE -0.979
+
+ENERGY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSAE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -78.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.9014 -0.7952 -0.3036  0.5624  3.2905 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.03442  0.1855  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)  
+(Intercept) 1.203e-01  7.093e-02 1.660e+02   1.697   0.0917 .
+MSAE        8.439e-03  1.660e-02 1.660e+02   0.508   0.6119  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+     (Intr)
+MSAE -0.979
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+ACOUSTICNESS:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSAE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -15.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.2632 -0.8062 -0.1877  0.6786  2.5059 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00234  0.04838 
+ Residual                   0.04845  0.22012 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)
+(Intercept)  0.09330    0.09910 19.00000   0.941    0.358
+MSAE         0.02658    0.02319 19.00000   1.146    0.266
+
+Correlation of Fixed Effects:
+     (Intr)
+MSAE -0.979
+
+--- Emotions (MSE) by Feature ---
+
+DANCEABILITY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -255.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.1737 -0.7664 -0.4244  0.6842  3.5092 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.01187  0.1089  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)   
+(Intercept)   0.19952    0.06167 166.00000   3.235  0.00147 **
+MSE          -0.02048    0.01140 166.00000  -1.795  0.07441 . 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+    (Intr)
+MSE -0.991
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+VALENCE:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -93.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.3951 -0.7916 -0.2696  0.7994  2.9213 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.001192 0.03452 
+ Residual                   0.030499 0.17464 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)
+(Intercept) -0.002527   0.113274 19.000000  -0.022    0.982
+MSE          0.036197   0.020947 19.000000   1.728    0.100
+
+Correlation of Fixed Effects:
+    (Intr)
+MSE -0.991
+
+ENERGY:
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -78.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.9221 -0.8018 -0.3257  0.5759  3.3327 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.00000  0.0000  
+ Residual                   0.03437  0.1854  
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)
+(Intercept)   0.08393    0.10496 166.00000    0.80    0.425
+MSE           0.01339    0.01941 166.00000    0.69    0.491
+
+Correlation of Fixed Effects:
+    (Intr)
+MSE -0.991
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+
+ACOUSTICNESS:
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ MSE + (1 | participant_id)
+   Data: feat_data
+
+REML criterion at convergence: -14.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.2454 -0.8243 -0.2057  0.6952  2.4775 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.002798 0.05289 
+ Residual                   0.048455 0.22012 
+Number of obs: 168, groups:  participant_id, 21
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)
+(Intercept)  0.12777    0.15068 19.00000   0.848    0.407
+MSE          0.01433    0.02786 19.00000   0.514    0.613
+
+Correlation of Fixed Effects:
+    (Intr)
+MSE -0.991
+
+--- Interaction: Feature Importance × MSAE ---
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: error ~ feature_is_important * MSAE + (1 | participant_id)
+   Data: perception_data
+
+REML criterion at convergence: -342.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.1832 -0.7721 -0.3073  0.5153  3.3875 
+
+Random effects:
+ Groups         Name        Variance Std.Dev.
+ participant_id (Intercept) 0.001069 0.0327  
+ Residual                   0.033249 0.1823  
+Number of obs: 672, groups:  participant_id, 21
+
+Fixed effects:
+                            Estimate Std. Error         df t value Pr(>|t|)  
+(Intercept)                 0.130634   0.065437  47.971284   1.996   0.0516 .
+feature_is_important        0.024568   0.075407 537.545882   0.326   0.7447  
+MSAE                        0.004552   0.016083  55.426898   0.283   0.7782  
+feature_is_important:MSAE  -0.001912   0.018138 517.834161  -0.105   0.9161  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) ftr_s_ MSAE  
+ftr_s_mprtn -0.642              
+MSAE        -0.976  0.638       
+ftr_s_:MSAE  0.651 -0.978 -0.680
+
+========================================================================
+END OF ANALYSIS
+========================================================================

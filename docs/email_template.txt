@@ -1,0 +1,36 @@
+Subject: Follow-up Survey - Your Personalized Music Recommendations
+
+Dear participant,
+
+Thank you for participating in our initial DSS music recommendation study!
+
+We have analyzed your music preferences and created personalized recommendations for you. We would now like to invite you to participate in a brief follow-up survey (approximately 5-10 minutes) to evaluate these recommendations.
+
+Your feedback is crucial for validating our recommendation system and will contribute to our understanding of how to create better music recommendations.
+
+To participate, please visit:
+[INSERT YOUR SURVEY URL HERE]/followup_consent.html
+
+Important: Please use the same email address you used in the initial survey (this email: [PARTICIPANT_EMAIL]) to access your personalized recommendations.
+
+What to expect:
+- Read the consent form and privacy information
+- Listen to 8 personalized music recommendations
+- Rate each song based on familiarity and how much you like it
+- Your responses will be analyzed anonymously
+
+Your participation is completely voluntary. If you have any questions, please feel free to contact:
+
+dr.ir. Martijn Willemsen
+M.C.Willemsen@tue.nl
+
+Thank you for your continued support of our research!
+
+Best regards,
+Group 2 - DSS Recommender Study
+Eindhoven University of Technology
+
+---
+
+Note: This email was sent to you because you participated in our initial survey and provided consent to be contacted for a follow-up study. Your email address will be deleted after the study concludes.
+
