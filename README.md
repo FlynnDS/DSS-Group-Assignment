@@ -136,3 +136,44 @@ python create_interactive_4d_viz.py
 5. **Run R Analysis** → `cd analysis && Rscript statistical_analysis.R`
 6. **Use Figures** → Reference from `figures/` in LaTeX paper
 
+## Mapping Scripts to Paper Results
+
+All results in the paper Section \ref{sec:results} are generated from the following scripts:
+
+### Python Script: `analysis/analyze_results.py`
+Generates all figures (descriptive visualizations):
+
+- **Figure \ref{fig:sq1_interaction}** → `figures/RQ_genre_feature_interaction.png`
+  - Shows 2×2 interaction: genre × feature similarity
+  
+- **Figure \ref{fig:sq1_compensation}** → `figures/SQ1_feature_compensation.png`
+  - Direct comparison for H1 testing
+  
+- **Figure \ref{fig:sq2_awareness}** → `figures/SQ2_feature_awareness.png`
+  - All 4 features selected vs. not (H2)
+  
+- **Figure \ref{fig:sq2_individual}** → `figures/SQ2_individual_features.png`
+  - Individual feature selection effects (H2)
+  
+- **Figure \ref{fig:sq3_perception}** → `figures/SQ3_perception_accuracy.png`
+  - Perception accuracy by feature importance (H3)
+  
+- **Figure \ref{fig:sq4_sophistication}** → `figures/SQ4_musical_sophistication.png`
+  - Musical sophistication correlations (H4)
+
+### R Script: `analysis/statistical_analysis.R`
+Generates all statistical tests (mixed-effects models):
+
+- **Table \ref{tab:sq1_results}** → RQ: Genre × Feature Interaction (H1)
+- **Table \ref{tab:sq2_results}** → SQ2: Individual feature effects (H2)
+- **Table \ref{tab:sq3_results}** → SQ3: Feature importance on perception (H3)
+- **Table \ref{tab:sq4_results}** → SQ4: Musical sophistication effects (H4)
+
+Output saved to: `analysis/statistical_results_clean.txt`
+
+### Data Files:
+- **Long-format rating data** → `analysis/rating_data_long.csv` (prepared by `prepare_data_for_r.py`)
+- **Long-format perception data** → `analysis/perception_data_long.csv` (prepared by `prepare_data_for_r.py`)
+
+**Note:** All scripts contain inline comments mapping outputs to specific paper sections, tables, and figures.
+
